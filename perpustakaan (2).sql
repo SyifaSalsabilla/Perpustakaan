@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Waktu pembuatan: 19 Jun 2023 pada 11.17
+-- Waktu pembuatan: 19 Jun 2023 pada 12.12
 -- Versi server: 8.0.30
 -- Versi PHP: 8.1.10
 
@@ -45,9 +45,16 @@ CREATE TABLE `buku` (
 --
 
 INSERT INTO `buku` (`id`, `kode`, `kode_kategori`, `judul`, `pengarang`, `penerbit`, `tahun`, `tanggal_input`, `harga`, `file_cover`) VALUES
-(30, 'B003', 'K001', 'Dolore nostrud aperi', 'Animi aliquid dolor', 'Et et laborum et rep', 9, '1973-09-05', '2222.00', 'uploads/649020a2250383.50833111.jpg'),
-(31, 'B082', 'K002', 'Corrupti ab tempore', 'At nobis esse esse', 'Nulla deleniti repre', 18, '2016-07-21', '2222.00', 'uploads/WhatsApp Image 2023-06-19 at 08.03.37.jpg'),
-(34, 'B002', 'K002', 'Vitae consectetur om', 'Quam eum omnis magni', 'Rerum qui quo perfer', 2, '1993-12-22', '2000.00', 'uploads/WhatsApp Image 2023-06-19 at 08.03.37.jpg');
+(35, 'B001', 'KTG001', 'Harry Potter and the Sorcerer\'s Stone', 'J.K. Rowling', 'Bloomsbury Publishing', 1997, '2022-01-01', '150000.00', 'uploads/download.jpeg'),
+(36, 'B002', 'KTG001', 'The Hobbit', 'J.R.R. Tolkien', 'Allen & Unwin', 1937, '2022-02-15', '125000.00', 'uploads/download (1).jpeg'),
+(37, 'B003', 'KTG002', 'Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', 'Harper', 2011, '2022-03-10', '175000.00', 'uploads/51Sn8PEXwcL.jpg'),
+(38, 'B004', 'KTG002', 'The Power of Now', 'Eckhart Tolle', 'New World Library', 1997, '2022-04-22', '135000.00', 'uploads/download (2).jpeg'),
+(39, 'B005', 'KTG003', 'Steve Jobs', 'Walter Isaacson', 'Simon & Schuster', 2011, '2022-05-05', '155000.00', 'uploads/steve-job-131010c.jpg'),
+(40, 'B006', 'KTG003', 'The Diary of a Young Girl', 'Anne Frank', 'Contact Publishing', 1947, '2022-06-18', '145000.00', 'uploads/download (3).jpeg'),
+(41, 'B007', 'KTG004', 'A Brief History of Time', 'Stephen Hawking', 'Bantam Books', 1988, '2022-07-21', '165000.00', 'uploads/afefecf4c015ab6d7f0d5fac390379a5.jpeg'),
+(42, 'B008', 'KTG004', 'The Elegant Universe', 'Brian Greene', 'W. W. Norton & Company', 1999, '2022-08-08', '185000.00', 'uploads/download (4).jpeg'),
+(43, 'B009', 'KTG005', 'Sapiens: A Brief History of Humankind', 'Yuval Noah Harari', 'Harper', 2011, '2022-09-14', '175000.00', 'uploads/0_77c04ad4-153a-47af-b192-e9cb57ac5e0c_335_500.jpg'),
+(44, 'B010', 'KTG005', 'Guns, Germs, and Steel', 'Jared Diamond', 'W. W. Norton & Company', 1997, '2022-10-29', '155000.00', 'uploads/51LVx6UrW5L._AC_UF1000,1000_QL80_.jpg');
 
 -- --------------------------------------------------------
 
@@ -66,8 +73,11 @@ CREATE TABLE `kategori` (
 --
 
 INSERT INTO `kategori` (`id`, `kode`, `kategori`) VALUES
-(2, 'K001', 'Non Fiksi'),
-(7, 'K002', 'Fiksi');
+(8, 'KTG001', 'Fiksi'),
+(9, 'KTG002', 'Non-Fiksi'),
+(10, 'KTG003', 'Biografi'),
+(11, 'KTG004', 'Sains'),
+(12, 'KTG005', 'Sejarah');
 
 --
 -- Indexes for dumped tables
@@ -96,13 +106,13 @@ ALTER TABLE `kategori`
 -- AUTO_INCREMENT untuk tabel `buku`
 --
 ALTER TABLE `buku`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT untuk tabel `kategori`
 --
 ALTER TABLE `kategori`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
