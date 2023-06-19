@@ -84,7 +84,8 @@ export default {
         tahun: null,
         tanggal_input: '',
         harga: '',
-        file_cover: []
+        file_cover: [],
+        file_cover_old: ''
       },
       kategoris: []
     };
@@ -114,7 +115,8 @@ export default {
             tahun: res.data[0].tahun,
             tanggal_input: res.data[0].tanggal_input,
             harga: res.data[0].harga,
-            file_cover: null
+            file_cover: null,
+            file_cover_old: res.data[0].file_cover
           };
         })
         .catch(error => {
@@ -145,6 +147,7 @@ export default {
       formData.append('tahun', this.buku.tahun);
       formData.append('tanggal_input', this.buku.tanggal_input);
       formData.append('harga', this.buku.harga);
+      formData.append('file_cover_old', this.buku.file_cover_old);
       if (this.buku.file_cover) {
         formData.append('file_cover', this.buku.file_cover[0]);
       }
