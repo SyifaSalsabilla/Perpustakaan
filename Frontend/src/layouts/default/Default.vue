@@ -29,7 +29,7 @@
         </v-row>
 
         <v-row>
-          <v-col cols="12" sm="8" offset-sm="2">
+          <v-col cols="12" md="12">
             <router-view></router-view>
           </v-col>
         </v-row>

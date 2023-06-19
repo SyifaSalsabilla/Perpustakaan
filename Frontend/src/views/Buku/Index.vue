@@ -9,7 +9,7 @@
       <v-btn color="primary" text @click="navigate('buku-create')">Tambah</v-btn>
     </v-card-actions>
 
-    <v-container grid-list-xs>
+    <v-container class="py-0">
       <v-table>
         <thead>
           <tr>

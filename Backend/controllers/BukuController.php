@@ -61,7 +61,9 @@ function handleUpdateBuku($buku)
         // Simpan nama file cover ke dalam database atau variabel $buku->file_cover
         $buku->file_cover = $destination;
     } else {
-        $buku->file_cover = $_POST['file_cover_old'];
+        if ($_POST['file_cover_old']) {
+            $buku->file_cover = $_POST['file_cover_old'];
+        }
     }
 
     $data = $_POST;
