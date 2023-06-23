@@ -47,6 +47,28 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "buku-edit" */ "@/views/Buku/BukuEdit"),
       },
+      {
+        path: "/anggota",
+        name: "Anggota",
+        component: () =>
+          import(
+            /* webpackChunkName: "anggota-edit" */ "@/views/Anggota/Index"
+          ),
+      },
+      {
+        path: "/anggota/create",
+        name: "anggota-create",
+        component: () =>
+          import(
+            /* webpackChunkName: "anggota-create" */ "@/views/Anggota/Create"
+          ),
+      },
+      {
+        path: "/anggota/:nomor",
+        name: "anggota-edit",
+        component: () =>
+          import(/* webpackChunkName: "edit" */ "@/views/Anggota/Edit"),
+      },
     ],
   },
 ];

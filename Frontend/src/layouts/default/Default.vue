@@ -23,6 +23,8 @@
                   value="Kategori"></v-list-item>
                 <v-list-item prepend-icon="mdi-book" @click="navigate('Buku')" title="List Buku"
                   value="book"></v-list-item>
+                <v-list-item prepend-icon="mdi-account" @click="navigate('Anggota')" title="List Anggota"
+                  value="anggota"></v-list-item>
               </v-list>
             </v-navigation-drawer>
           </v-col>
