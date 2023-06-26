@@ -60,7 +60,7 @@
             <td>{{ item.tanggal_input }}</td>
             <td>{{ item.harga }}</td>
             <td>
-              <img :src="API_URL + item.file_cover" alt="Cover" height="100">
+              <img :src="API_URL +/+ item.file_cover" alt="Cover" height="100">
             </td>
             <td>
               <v-btn size="x-small" prepend-icon="mdi-pencil" variant="outlined" color="warning" text
