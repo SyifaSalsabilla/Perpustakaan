@@ -69,6 +69,22 @@ const routes = [
         component: () =>
           import(/* webpackChunkName: "edit" */ "@/views/Anggota/Edit"),
       },
+      {
+        path: "/peminjaman",
+        name: "Peminjaman",
+        component: () =>
+          import(
+            /* webpackChunkName: "peminjaman" */ "@/views/Peminjaman/Index"
+          ),
+      },
+      {
+        path: "/peminjaman/show/:id",
+        name: "peminjaman-show",
+        component: () =>
+          import(
+            /* webpackChunkName: "peminjaman-show" */ "@/views/Peminjaman/Show"
+          ),
+      },
     ],
   },
 ];

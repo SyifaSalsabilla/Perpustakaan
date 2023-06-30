@@ -13,3 +13,4 @@ require_once(__DIR__ . '/utils/functions.php');
 require_once(__DIR__ . '/controllers/KategoriController.php');
 require_once(__DIR__ . '/controllers/BukuController.php');
 require_once(__DIR__ . '/controllers/AnggotaController.php');
+require_once(__DIR__ . '/controllers/PeminjamanController.php');

@@ -1,7 +1,7 @@
 RewriteEngine On
 
-Header set Access-Control-Allow-Origin "https://perpustakaan-omega.vercel.app"
-Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE"
+#Header set Access-Control-Allow-Origin "https://perpustakaan-omega.vercel.app"
+#Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE"
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
