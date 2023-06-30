@@ -233,37 +233,6 @@ const printPage = () => {
   }
 }
 
-/* Styling tambahan untuk tampilan modern */
-.v-toolbar {
-  margin-bottom: 16px;
-}
-
-.v-card {
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.v-card-title {
-  padding: 16px;
-  font-size: 18px;
-  font-weight: bold;
-  background-color: #f5f5f5;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-.v-list {
-  padding: 0;
-}
-
-.v-list-item {
-  border-bottom: 1px solid #e0e0e0;
-}
-
-.v-list-item:last-child {
-  border-bottom: none;
-}
-
 .font-weight-bold {
   font-weight: bold;
 }
